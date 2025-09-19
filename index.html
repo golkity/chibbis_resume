@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Чиббис</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Unbounded:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="color.css">
+
+</head>
+<body data-section="main">
+    <div class="cursor"></div>
+    <main id="welcome-screen" class="page active flex flex-col p-8 md:p-12">
+       <div class="parallax-container flex flex-col h-full w-full max-w-7xl mx-auto">
+            <nav class="w-full flex justify-between items-center border-b border-border pb-4 z-10">
+                <h4 class="font-bold text-text-primary">Дорогой Паша, возьми нас пожалуйста</h4>
+                <a href="#" class="text-sm text-text-secondary hover:text-primary transition-colors">Связаться</a>
+            </nav>
+
+            <div class="flex-grow flex flex-col justify-center items-center text-center py-12 md:py-20 z-0">
+            
+                <h1 class="text-7xl sm:text-8xl md:text-9xl xl:text-[10rem] uppercase">
+                    <span class="title-outline">Р</span>Е<span class="title-outline">З</span>Ю<span class="title-outline">М</span>Е
+                </h1>
+            </div>
+
+            <div class="my-16 w-full z-10">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl uppercase tracking-widest text-text-primary">Выберите резюме</h3>
+                    <hr class="w-16 mx-auto mt-4 border-border">
+                </div>
+
+                <div class="w-full max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+                    <div class="flex flex-col items-center gap-4">
+                        <img class="w-32 h-32 rounded-full object-cover border-4 border-border group-hover:border-primary transition-all" src="./image/DSC00632.jpeg" alt="Аватар Backend разработчика">
+                        <h4 class="text-2xl font-bold mt-2">Даня Цымляков</h4>
+                        <p class="text-text-secondary -mt-3 mb-2">Backend Developer</p>
+                        <button class="nav-link-card nav-btn w-full" data-target="backend-resume">
+                            <div class="flex items-center justify-center gap-4">
+                                <i data-lucide="code-2" class="w-6 h-6 text-primary"></i>
+                                <h2 class="text-xl">Посмотреть резюме</h2>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-4">
+                        <img class="w-32 h-32 rounded-full object-cover border-4 border-border group-hover:border-accent transition-all" src="./image/DSC00790.jpg" alt="Аватар Data Analyst">
+                        <h4 class="text-2xl font-bold mt-2">Соня Широкая</h4>
+                        <p class="text-text-secondary -mt-3 mb-2">Data Analyst</p>
+                        <button class="nav-link-card nav-btn accent-hover w-full" data-target="analyst-resume">
+                            <div class="flex items-center justify-center gap-4">
+                                <i data-lucide="bar-chart-3" class="w-6 h-6 text-accent"></i>
+                                <h2 class="text-xl">Посмотреть резюме</h2>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="my-12 md:my-16 w-full"> <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl uppercase tracking-widest text-text-primary">Что мы делаем вместе</h3>
+                    <hr class="w-16 mx-auto mt-4 border-border">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    <div class="task-item">
+                        <i data-lucide="database-zap" class="w-8 h-8 text-primary mb-3"></i>
+                        <h4 class="text-lg font-bold">Проектирование архитектуры данных</h4>
+                        <p class="text-text-secondary mt-1 text-sm">Бэкендер строит надежные пайплайны и API, а аналитик проектирует структуру данных для будущих исследований и моделей.</p>
+                    </div>
+                    <div class="task-item">
+                        <i data-lucide="brain-circuit" class="w-8 h-8 text-primary mb-3"></i>
+                        <h4 class="text-lg font-bold">Внедрение ML-моделей</h4>
+                        <p class="text-text-secondary mt-1 text-sm">Аналитик создает и обучает модель, а бэкендер интегрирует ее в продакшн, обеспечивая высокую скорость и доступность.</p>
+                    </div>
+                    <div class="task-item">
+                        <i data-lucide="layout-dashboard" class="w-8 h-8 text-primary mb-3"></i>
+                        <h4 class="text-lg font-bold">Создание внутренних дашбордов</h4>
+                        <p class="text-text-secondary mt-1 text-sm">Бэкендер обеспечивает стабильную поставку данных в реальном времени, а аналитик создает наглядные и полезные визуализации.</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-16 mb-12">
+                    <h3 class="text-2xl md:text-3xl uppercase tracking-widest text-text-primary">Совместные Pet-Проекты</h3>
+                    <hr class="w-16 mx-auto mt-4 border-border">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="project-card flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl">Web-приложние "Иттер"</h3>
+                            <p class="text-text-secondary mt-2">
+                                <strong class="text-primary">Backend:</strong> Разработка высокопроизводительного API на Go для отказоустойчивой системы.<br>
+                                <strong class="text-accent">Analyst:</strong> Анализ поведения пользователей и создание ML-модели (Python, Pandas) для генерации рекомендаций.
+                            </p>
+                        </div>
+                        <div class="mt-4 flex items-center gap-4">
+                            <a href="https://t.me/itter_ru" target="_blank" class="project-link">
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                                <span>Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+
+    <div class="project-card flex flex-col justify-between">
+        <div>
+            <h3 class="text-xl">Сайт АНО "ЕНОТ"</h3>
+            <p class="text-text-secondary mt-2">
+                <strong class="text-primary">Backend:</strong> сайт организации.<br>
+                <strong class="text-accent">Analyst:</strong> внутренние приложения с анкетированием участников проектов.
+            </p>
+        </div>
+        <div class="mt-4 flex items-center gap-4">
+            <a href="https://anoenot.ru" target="_blank" class="project-link">
+                <i data-lucide="globe" class="w-4 h-4"></i>
+                <span>Сайт</span>
+            </a>
+            <a href="https://vk.com/ano_enot" target="_blank" class="project-link">
+                <img src="./image/vk-svgrepo-com.svg" alt="Логотип ВКонтакте" class="w-5 h-5">
+                <span>VK</span>
+            </a>
+            <a href="https://t.me/ano_enot" target="_blank" class="project-link">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Telegram</span>
+            </a>
+        </div>
+    </div>
+</div>
+            </div>
+            <footer class="w-full mt-24 pt-8 pb-8 border-t border-border text-text-secondary text-sm">
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>&copy; 2025 Даня и Софья. Все права защищены.</p>
+        <div class="flex items-center gap-6">
+             <a href="#" class="hover:text-primary transition-colors">Связаться</a>
+             <button class="nav-btn hover:text-primary transition-colors" data-target="welcome-screen">На главную</button>
+        </div>
+    </div>
+</footer>
+        </div>
+        
+    </main>
+
+    <section id="backend-resume" class="page p-8 md:p-12">
+        <div class="relative">
+            <img src="./image/Banner_AIDAO_1614_h_1048_0ad144cb82.webp" alt="Decorative element" class="floating-element top-right">
+            <img src="./image/Banner_AIDAO_1614_h_1048_0ad144cb82.webp" alt="Decorative element" class="floating-element bottom-left">
+
+            <div class="parallax-container">
+                <div class="max-w-4xl mx-auto">
+                    <button class="nav-btn text-text-secondary hover:text-primary transition-colors mb-12 flex items-center gap-2" data-target="welcome-screen"><i data-lucide="arrow-left" class="w-4 h-4"></i> Назад</button>
+                    
+                    <header class="content-section flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
+                        <img class="w-32 h-32 rounded-full object-cover" src="./image/DSC00632.jpeg" alt="Аватар">
+                        <div>
+                            <h1 class="text-5xl lg:text-6xl">Даня</h1>
+                            <p class="text-xl text-primary mt-2" style="font-family: var(--font-body)">Backend Developer</p>
+                            <p class="text-text-secondary mt-2 flex items-center justify-center md:justify-start gap-2">
+                                <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                                САФУ им. М.В. Ломоносова, 01.03.02
+                            </p>
+                        </div>
+                    </header>
+                    
+                    <div class="content-section">
+                        <h2 class="text-3xl mb-4">Обо мне</h2>
+                        <p class="text-text-secondary leading-relaxed">
+                            Я - cтудент бакалавриата САФУ по направлению "Прикладная математика и информатика", специализирующийся на BackEnd разработке на Go. Параллельно с основной деятельностью активно расширяю компетенции в области ML. В настоящее время применяю полученные навыки на практике, разрабатывая собственный стартап-проект — приложение "иттер".
+                        </p>
+                    </div>
+
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl mb-6">Hard Skills</h3>
+                            <ul class="skills-list">
+                                <li>Go(Fiber, Gin, Echo)</li>
+                                <li>SQL (PostgreSQL, MySQ)</li>
+                                <li>Redis</li>
+                                <li>Nginx, Kubernetis, Kafka,AWS, Docker</li>
+                                <li>Git, CI/CD</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl mb-6">Soft Skills</h3>
+                            <ul class="skills-list">
+                                <li>Критическое мышление</li>
+                                <li>Решение проблем</li>
+                                <li>обработка текстовой информации</li>
+                                <li>Внимание к деталям</li>
+                                <li>тайм-менеджмент</li>
+                                <li>постановка целей и задач</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2 class="text-3xl mb-10">Опыт работы</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h3 class="text-xl">Техническое собеседование в Digatal F5</h3>
+                                <p class="text-text-secondary">июнь-август 2024</p>
+                            </div>
+
+                             <div class="timeline-item">
+                                <h3 class="text-xl">BackEnd разработчик в "Иттер"</h3>
+                                <p class="text-text-secondary">июнь 2024 - н.в</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="text-3xl mb-10">Образование и курсы</h2>
+
+                        <div class="timeline">
+
+
+                            <div class="timeline-item">
+                                <h3 class="text-xl">Высшее образование</h3>
+                                <p class="text-text-secondary"> Северный арктический федеральный университет имени М.В. Ломоносова / 2025 – наст. время</p>
+                            </div>
+                        
+                            <div class="timeline-item">
+                                <h3 class="text-xl">Среднее (полное) общее образование</h3>
+                                <p class="text-text-secondary">МОУ СОШ № 3 г. Новодвинск / 2014 – 2025</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <h3 class="text-xl">Дополнительное образование (Яндекс Лицей)</h3>
+                                <p class="text-text-secondary">Годовой курс по разработке на Go / 2024-2025</p>
+                                <button class="view-cert-btn tag tag-golden" >Диплом с отличием <i data-lucide="award" class="w-4 h-4"></i></button>
+                            </div>
+                            <div class="timeline-item">
+                                <h3 class="text-xl">Хакатон (Taskills)</h3>
+                                <p class="text-text-secondary">Teamlead команды / 2023</p>
+                                <button class="view-cert-btn tag">Посмотреть сертификат <i data-lucide="file-text" class="w-4 h-4"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2 class="text-3xl mb-8">Проекты GitHub</h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <a href="#" class="project-card"><h3 class="text-xl">Url-Shortner</h3><p class="text-text-secondary mt-2">Url-shortner на Go</p></a>
+                            <a href="#" class="project-card"><h3 class="text-xl">Async Data Processor</h3><p class="text-text-secondary mt-2">Сервис асинхронной обработки данных.</p></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl mb-4">FAQ</h2>
+                        <div class="faq-item">
+                            <button class="faq-question">Почему я хочу на стажировку в Чиббис?<i data-lucide="plus" class="icon"></i></button>
+                            <div class="faq-answer"><p>
+                                Поскольку практика в университете начнется только после 2-го курса, я бы хотел уже сейчас применить знания, полученные в вузе и на курсах от Яндекса, в реальных бизнес-задачах. А после этого я бы с радостью прошел производственную практику именно в "Чиббис"!
+                            </p></div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Какие у меня ожидания от стажировки?<i data-lucide="plus" class="icon"></i></button>
+                            <div class="faq-answer"><p>
+                                Я рассчитываю на менторскую поддержку со стороны опытного специалиста, который сможет направлять мое развитие и делать фитбэки. Мне важно не просто получать задачи, а понимать, почему они решаются именно так, и иметь возможность задавать вопросы.
+                            </p></div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">Какие  профессиональные навыки я планирую повысить за счет стажировки?<i data-lucide="plus" class="icon"></i></button>
+                            <div class="faq-answer"><p>
+                                Моя главная цель - развить прикладные навыки в BackEnd-е на Go. В частности, я хочу научиться создавать отказоустойчивые API и работать с базами данных в условиях реального проекта. Не менее важно для меня прокачать и командные навыки.
+                            </p></div>
+                        </div>
+                    </div>
+
+                    <footer class="text-center text-text-secondary pt-16 mt-8">
+                        <p>&copy; 2025 Finnik</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="analyst-resume" class="page p-8 md:p-12">
+    <div class="relative">
+        <img src="./image/Group_481686.png.webp" alt="Decorative element" class="floating-element top-right">
+        <img src="./image/Group_481686.png.webp" alt="Decorative element" class="floating-element bottom-left">
+
+        <div class="parallax-container">
+
+            <div class="max-w-4xl mx-auto">
+                <button class="nav-btn text-text-secondary hover:text-accent transition-colors mb-12 flex items-center gap-2" data-target="welcome-screen"><i data-lucide="arrow-left" class="w-4 h-4"></i> Назад</button>
+                
+                <header class="content-section flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
+                    <img class="w-32 h-32 rounded-full object-cover" src="./image/DSC00790.jpg" alt="Аватар">
+                    <div>
+                        <h1 class="text-5xl lg:text-6xl">Софья Широкая</h1>
+                        <p class="text-xl text-accent mt-2" style="font-family: var(--font-body)">Data Analyst</p>
+
+                        <p class="text-text-secondary mt-3 flex items-center justify-center md:justify-start gap-2">
+                            <i data-lucide="briefcase" class="w-4 h-4"></i>
+                            Директор, АНО "ЕНОТ"
+                        </p>
+                        
+                        <p class="text-text-secondary mt-2 flex items-center justify-center md:justify-start gap-2">
+                            <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                            РЭУ им. Г. В. Плеханова, 38.03.01 и 01.03.02
+                        </p>
+                        <div class="flex items-center justify-center md:justify-start gap-5 mt-6">
+                            <a href="#" class="text-text-secondary hover:text-primary transition-colors" title="GitHub">
+                                <i data-lucide="github" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="text-text-secondary hover:text-primary transition-colors" title="Telegram">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="text-text-secondary hover:text-primary transition-colors" title="VK">
+                            <img src="./image/vk-svgrepo-com.svg" alt="Логотип ВКонтакте" class="w-5 h-5">
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="content-section">
+                    <h2 class="text-3xl mb-4">Обо мне</h2>
+                    <p class="text-text-secondary leading-relaxed">
+                        Являюсь студентом бакалавриата по направлению Аналитика больших данных в экономике. На текущий момент преимущественно занимаюсь научной деятельностью по направлениям "Экономическая статистика" и "Анализ данных"
+                    </p>
+                </div>
+
+
+                <div class="content-section">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl mb-6">Hard Skills</h3>
+                            <ul class="skills-list">
+                                <li>Python (Pandas, NumPy, Scikit-learn)</li>
+                                <li>SQL (PostgreSQL, MySQL)</li>
+                                <li>Визуализация данных (Tableau, Matplotlib)</li>
+                                <li>Машинное обучение (базовые модели)</li>
+                                <li>Figma, Adobe Illustrator</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl mb-6">Soft Skills</h3>
+                            <ul class="skills-list">
+                                <li>постановка целей и задач</li>
+                                <li>навык публичных выступлений</li>
+                                <li>обработка текстовой информации</li>
+                                <li>разработка бизнес-моделей</li>
+                                <li>тайм-менеджмент</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2 class="text-3xl mb-10">Опыт работы</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3 class="text-xl">Член палаты Замоскворецкого района</h3>
+                            <p class="text-text-secondary">Молодёжный парламент города Москвы / 2024 – наст. время</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="text-xl">Директор</h3>
+                            <p class="text-text-secondary">АНО «Есть Необходимость Обучить Товарища» / 2024 – наст. время</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="text-xl">Руководитель по работе со спонсорами и грантодателями</h3>
+                            <p class="text-text-secondary">Студенческое научное общество РЭУ имени Г.В. Плеханова / 2024 – наст. время</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="text-xl">Стажировка в Управлении цифрового развития и информационных технологий</h3>
+                            <p class="text-text-secondary">Федеральная служба по труду и занятости / Октябрь 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2 class="text-3xl mb-10">Образование и курсы</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3 class="text-xl">Высшее образование</h3>
+                            <p class="text-text-secondary">Российский экономический университет имени Г. В. Плеханова / 2024 – наст. время</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="text-xl">Среднее (полное) общее образование</h3>
+                            <p class="text-text-secondary">Архангельский государственный лицей имени М.В. Ломоносова / 2022 – 2024</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3 class="text-xl">Дополнительное образование (Экономика, математика)</h3>
+                            <p class="text-text-secondary">Экономико-математическая школа при экономическом факультете МГУ имени М.В. Ломоносова / 2022 – 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lightbox" class="lightbox-overlay">
+                    <button class="lightbox-close"><i data-lucide="x" class="w-8 h-8"></i></button>
+                    <img src="" alt="Сертификат или диплом" class="lightbox-content">
+                </div>
+
+                 <div>
+                        <h2 class="text-3xl mb-4">FAQ</h2>
+                        <div class="faq-item">
+                            <button class="faq-question">Почему я хочу на стажировку в Чиббис?<i data-lucide="plus" class="icon"></i></button>
+                            <div class="faq-answer"><p>
+                                так как введение в профессию у нас начнется не скоро, мне хотелось бы на практике узнать, как я могу применять навыки, получаемые во время обучения. а еще - в будущий год мне хотелось бы пройти производственную практику в Чиббисе
+                            </p></div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Какие у меня ожидания от стажировки?<i data-lucide="plus" class="icon"></i></button>
+                            <div class="faq-answer"><p>
+                                основным ожиданием является возможность погрузиться в среду создания айти продукта, понять как столь актуальные ныне вещи функционируют изнутри
+                            </p></div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">Какие  профессиональные навыки я планирую повысить за счет стажировки?<i data-lucide="plus" class="icon"></i></button>
+                            <div class="faq-answer"><p>
+                                практическое применения навыков аналитика больших данных, работа в команде IT-специалистов
+                            </p></div>
+                        </div>
+                    </div>
+
+                <footer class="text-center text-text-secondary pt-16 mt-8">
+                    <p>&copy; 2025 Портфолио</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox-overlay">
+        <button class="lightbox-close"><i data-lucide="x" class="w-8 h-8"></i></button>
+        <img src="" alt="Документ" class="lightbox-content">
+    </div>
+<script src="index.js" defer></script>
+</body>
+
+</html>
