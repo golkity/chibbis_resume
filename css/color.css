@@ -1,0 +1,11 @@
+:root {
+    --bg: #000000;
+    --text-primary: #FFFFFF;
+    --text-secondary: #999999;
+    --primary: #0057FF;
+    --accent: #FB923C;
+    --border: #333333;
+    --gold: #FFD700;
+    --font-body: 'Inter', sans-serif;
+    --font-display: 'Unbounded', sans-serif;
+}
